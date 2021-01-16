@@ -4,9 +4,10 @@
       <v-col cols="6">
         <vue-tel-input-vuetify
           v-model="myPhone"
+          outlined
+          rounded="pill"
           :preferred-countries="['id', 'gb', 'ua', 'us']"
           :valid-characters-only="true"
-          select-label="Code"
           @input="onInput"
         />
       </v-col>

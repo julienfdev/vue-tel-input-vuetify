@@ -1,5 +1,5 @@
 <template>
-  <div :class="['vue-tel-input-vuetify', wrapperClasses]">
+  <div :class="['vue-tel-input-vuetify', wrapperClasses]" class="d-flex align-start">
     <div class="country-code">
       <v-select
         :label="selectLabel"
@@ -7,7 +7,6 @@
         @change="onChangeCountryCode"
         :items="sortedCountries"
         :disabled="disabled"
-        :outlined="outlined"
         :filled="filled"
         :flat="flat"
         :light="light"
@@ -17,6 +16,7 @@
         :dense="dense"
         item-text="name"
         item-value="dialCode"
+        :append-icon="null"
         return-object
       >
         <template v-slot:selection>
